@@ -262,10 +262,11 @@ section.footer {
    margin-top: 20px 
 }
 
-footer p {
+footer li a {
     color: black;
-    text-align: left;
-    display: inline;
+    display: block;
+    
+    
 }
 
    
