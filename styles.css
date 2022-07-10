@@ -1,83 +1,285 @@
 * {
-    box-sizing: border-box;
+    border-style: border-box;
     margin: 0px;
     padding: 0px;
-}
-
-
+   }
 body {
-    display: flex; 
-    flex-wrap: wrap;
-    background-color: #7b7b88;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+   background: #b1b1b1;
 }
 
-@media (max-width: 800px) {
-    body {
-      flex-direction: column;
-    }
+main {
+   background: #ffffff;
+   min-width: fill-available;
 }
+   
+   section.container {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     background-color: #b1b1b8;
+   }
+   
+   header {
+     display: flex;
+   }
+   
+   nav.container {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+   }
+   
+   h1 {
+    font-size: 32px;
+    padding-left: 200px;
+    background-color: #a0fef0;
+    position: fixed;
+   }
+   
+   h1 a :hover {
+    color: #000;
+   }
+   
+   h2 {
+    background-color: #a0fef0;
+    padding: 5px;
+   }
+   
+   button {
+    margin: 5px;
+    background: transparent;
+    border: none;
+    border-bottom: solid #a0fef0 2px;
+    padding: 2px;
+    color: #a0fef0
+   }
 
-.header {
-    display: top;
-    flex-direction: row;
-    background-color: #51abc7;
-    max-height: max-content;
-    width: 100%;
-}
+   .but1 {
+       color:#a0fef0;
+   }
+   
+  #prahguecks {
+      align-self: 
+      center;}
 
-h1 {
-    
-}
-
-ul {
-    list-style-type: none;
-    display: inline-flex;
-    flex-direction: row;
-    margin: 20px;  
-}
-
- 
-
-
-/*styling for drop-menu-btn in header/nav/li*/
- .drop {
-    display: inline-flex;
-    position: relative;
-    justify-content: center;
-  }
-
-/* */
+  
+   
+   a {
+    color: #b5b5b5;
+    text-decoration: none;
+   }
+   a #bout-mi {
+    color: #a0fef0;
+   }
+   
+   .subtitle {
+     display: flex;
+     flex-flow: row-reverse;
+     justify-content: space-evenly;
+     align-items: end;
+     background-image: url(assets/images/sbttlbkgrd.jpg);
+   padding-top: 5px;
+   }
+   
+   .profile {
+     border: solid #a0fef0 5px;
+   }
+     
+     /* Flex layout and individual style*/
+   
+     /* Dropdown Button */
 .dbtn {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: transparent;
+    color: #a0fef0;
     padding: 16px;
     font-size: 16px;
     border: none;
   }
   
-  /* */
+  /* The container <div> - needed to position the dropdown content */
+  .drop {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
   .project-links {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #a0fef0;
+    min-width: 125.57px;
     z-index: 1;
   }
   
   /* Links inside the dropdown */
   .project-links a {
-    color: black;
-    padding: 12px 16px;
+    text-align: center;
+    padding: 5px;
     text-decoration: none;
     display: block;
+    border-bottom: solid;
   }
   
   /* Change color of dropdown links on hover */
-  .project-links a:hover {background-color: #ddd;}
+  .project-links a:hover {
+      color: #000;
+      border-top: solid;
+    }
   
   /* Show the dropdown menu on hover */
   .drop:hover .project-links {
       display: block;
     }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .drop:hover .dropbtn {
+      background-color: #a0fef0;}
+       
+  a #top {
+      color: #a0fef0;
+      padding: 5px;
+   }
+
+a.hdshot img {
+   border: solid 5px #a0fef0;
+}
+
+
+div main {
+   background-color: #ffffff;
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+}
+
+.about-me , .resume , .footer {
+   display: inline-flex;
+   flex-flow: row nowrap;
+}
+section.projects {
+   display: inline-flex;
+   flex-direction: row;
+   min-height: fit-content;
+   max-width: 600px;
+   align-items: stretch;
+}
+
+div#main {
+   display: inline-flex;
+   flex-flow: row wrap;
+   max-width: 600px;
+   height: auto;
+   
+}
+
+h3 {
+   min-width: 300px;
+   font-size: 30px;
+   text-align: inline-end;
+}
+
+h3#pj {
+   display: inline-flex;
+   align-self: center;
+   justify-content: flex-end;
+}
+
+summary {
+   display: inline-flex;
+   width: 600px;}
+
+#i {
+   width: 600px;
+   max-height: 300px;
+   display: inline-flex;
+   margin-bottom: 5px;
+   border: solid #a0fef0 3px;
+   background-color: #a0fef0;
+}
+
+#i img {
+   display: inherit;
+   position: relative; 
+   
+}
+
+a#1 {
+   display: flex;
+   position: absolute;
+   
+}
+
+#ii , #iii {
+   display: inline-flex;
+   width: 49%;
+   height: fit-content;
+   border: solid 2px #a0fef0;
+   justify-content: space-between;
+   align-items: center;
+   margin: 1px;
+
+}
+
+#iii img {
+   max-height: 150px;
+   
+}
+
+div#ii a , div#iii a {
+   background: #a0fef0;
+   position:absolute;
+   margin-top: 12%
+}
+
+#iv , #v {
+   display: inline-flex;
+   width: 49%;
+   height: auto;
+   border: solid #a0fef0 2px;
+   margin: 1px;
+}
+
+div#iv a , div#v a {
+   background: #a0fef0;
+   position: absolute;
+   margin-top: 7%
+}
+
+div#iv img , div#v img {
+   width: 300px
+}
+
+#rezma , .resume p  {
+   margin-top: 30px;
+}
+
+.resume p , summary {
+   border-left: solid 2px;
+   
+}
+
+section.footer {
+   margin-top: 20px 
+}
+
+footer p {
+    color: black;
+    text-align: left;
+    display: inline;
+}
+
+   
+   ||media query
+
+
+   @media (max-width: 600px) {
+       .container {
+           flex-flow: column wrap;
+       }
+       nav.container {
+           flex-direction: column;
+           align-content: flex-end;
+       }
+     }
+   
+   
